@@ -23,3 +23,18 @@ spelinfo = {
         }
     }
 }
+
+print(spelinfo['speler2']["naam"])
+print(spelinfo['speler1']["positie"])
+print(spelinfo['speler2']['inventaris']["wapen"])
+spelinfo['speler2']["inventaris"]['bepantsering"']= "schild"
+
+spelinfo['speler1']["haker"]= False
+spelinfo['speler2']["haker"]= True
+spelinfo['speler1']["haker"]= True
+
+
+
+print(spelinfo)
+
+
