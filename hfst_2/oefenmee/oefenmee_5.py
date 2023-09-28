@@ -1,12 +1,19 @@
 # Pas de URL aan zoals aangegeven in de verschillende niveau's.
-import requests
+import requests,json
 
-url = "https://v2.jokeapi.dev/joke/Programming?safe-mode"
+url = "https://v2.jokeapi.dev/joke/Christmas?amount=3"
 response_json = requests.get(url).json() # Haal JSON uit response.
 
+with open("hfst_2/oefenmee/jokeapi.json", "w") as file:
+    json.dump(response_json, file)
+    print("Data gedumpt!")
+
 # Bepaal of de grap uit 1 of 2 delen bestaat.
-if ("joke" in response_json):
-    print(response_json["joke"])     # De grap
-else:
-    print(response_json["setup"])    # De setup
-    print(response_json["delivery"]) # De punchline
+
+for joke in  response_json["jokes"]:
+    print("^^^^^^^^^^^^^^^^^^^^^^")
+    if ("joke" in joke):
+        print(joke["joke"])     # De grap
+    else:
+        print(joke["setup"])    # De setup
+        print(joke["delivery"]) # De punchline

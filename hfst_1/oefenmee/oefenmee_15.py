@@ -14,7 +14,7 @@ grootste_steden = {
     }
 }
 
-for land,steden in grootste_steden.items():
+for land,steden in grootste_steden.items():# items overloopt het element nog eens je kunt nu zrlfs de waarde van ieder element bepaalen 
     print(f'De grootste steden in {land} zijn:')
     for stad, aantal in steden.items():
         print(stad,aantal)
