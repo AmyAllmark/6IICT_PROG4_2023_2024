@@ -8,4 +8,7 @@ with open("hfst_2/oefenmee/bericht_adviceslip.json", "w") as file:
     json.dump(response_json, file)
     print("Data gedumpt!")
 
+
+
+
 print(response_json["slips"][0]["advice"])
