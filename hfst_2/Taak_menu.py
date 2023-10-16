@@ -40,11 +40,11 @@ hij vraagt ook of je wil weten in welke categorie je drankje zich bevind.
 
         #_______________________________________________________
         # tussen line 42 tot 49 worden de cocktails toegevoed die de gebruiker heeft ingegeven en deze toevoegen aan een geschieddenis voor later bij (nummer 4)
-        with open("hfst_2/geschiedenis.json", "r") as file:
+        with open("geschiedenis.json", "r") as file:
             dranken=json.load(file)
             dranken.append(gebruiker)
 
-        with open("hfst_2/geschiedenis.json", "w") as file:
+        with open("geschiedenis.json", "w") as file:
              json.dump(dranken, file)
         #------------------------------------------------------
 
@@ -103,7 +103,7 @@ en we printen dan ook het recept van dit drankje
         random_drankje=input(f"wilt u dat ik u een drankje voorstel? j/n: ")
 
         if random_drankje == "j":
-            with open("hfst_2\TaakAPIrandom_drankje.json", "w") as file:
+            with open("TaakAPIrandom_drankje.json", "w") as file:
                 json.dump(response_json, file)
                 #print("Data gedumpt!")
 
@@ -111,7 +111,7 @@ en we printen dan ook het recept van dit drankje
             continue
 
 
-        with open("hfst_2\TaakAPIfout.json", "w") as file:
+        with open("TaakAPIfout.json", "w") as file:
                 json.dump(response_json, file)
                 #print("Data gedumpt!")
 
@@ -144,7 +144,7 @@ hij geeft dan een uitleg over dit specifiek ingredient
         url_ingredient_ingeven=f"https://www.thecocktaildb.com/api/json/v1/1/search.php?i={Gebruiker_ingredient}"
         response_json = requests.get(url_ingredient_ingeven).json()
 
-        with open("hfst_2\TaakAPIingredient.json", "w") as file:
+        with open("TaakAPIingredient.json", "w") as file:
             json.dump(response_json, file)
 
 
@@ -164,7 +164,7 @@ hij geeft dan een uitleg over dit specifiek ingredient
 uitleg voor deze blok van code: 
             """
     elif nummer == "4":
-        with open("hfst_2/geschiedenis.json", "r") as file:
+        with open("geschiedenis.json", "r") as file:
             dranken=json.load(file)
         print("____________________________________________")
         print("deze dranken stonden in uw geschiedenis:")
