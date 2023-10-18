@@ -20,7 +20,7 @@ def wijzig():
     kleur=veld.get()
     if kleur == "red" or "green" or "pink"or "purple"or "blue"or "yellow"or "turquoise":
         # Wijzig de tekst en kleur van het label.
-        label.config(text=f"Het label is nu {kleur}", fg=kleur)
+        label.config(text=f"Het label is nu {kleur}", bg=kleur) #fg= forground bg= background
 
 knop1 = tk.Button(master=app, text="Wijzig",command=wijzig)
 knop1.grid(row=0,column=2)
