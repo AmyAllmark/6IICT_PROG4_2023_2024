@@ -160,8 +160,10 @@ hij geeft dan een uitleg over dit specifiek ingredient
             print("ingredient niet gevonden.")
 # einde blok3/nummmer3
     
+    #blok 4
             """
-uitleg voor deze blok van code: 
+uitleg voor deze blok van code: als het nummer gelijk aan 4 is van het menu dat de gebruiker kon
+ kiezen dan laat hij de geschieddenis zien van welke dranken je allemaal hebt opgevraagd
             """
     elif nummer == "4":
         with open("geschiedenis.json", "r") as file:
@@ -174,6 +176,11 @@ uitleg voor deze blok van code:
         print("____________________________________________")
 
 
+#einde blok 4
+
+        """
+        uitleg code: als gebruiker 5 ingeeft dan stopt het programma.
+        """
 
 
     elif nummer == "5":

@@ -35,4 +35,10 @@ label_6.grid(row=3, column=1) # Rij 1, kolom 0
 label_6 = tk.Label(master=app, text="(0,2)")
 label_6.grid(row=0, column=2) # Rij 1, kolom 0
 
+label_6 = tk.Label(master=app, text="(2,2)")
+label_6.grid(row=2, column=2) # Rij 1, kolom 0
+
+label_6 = tk.Label(master=app, text="(3,2)")
+label_6.grid(row=3, column=2) # Rij 1, kolom 0
+
 app.mainloop()
