@@ -10,9 +10,12 @@ import tkinter as tk
 app = tk.Tk()
 
 getal = 5
+
 def knop_klik():
+    global getal
     getal+=1
     print(getal)
+    
 
 # Klikken op de knop geeft fout. Want getal wijzigen kan niet in de functie.
 knop = tk.Button(master=app, text="Klik op mij!", command=knop_klik)

@@ -38,3 +38,5 @@ veld2 = tk.Entry(master=app)
 # 2) Inputveld plaatsen
 veld.grid(row=0, column=0) # Rij 1, kolom 0
 veld2.grid(row=0, column=1) # Rij 1, kolom 0
+
+app.mainloop()
