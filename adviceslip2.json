@@ -1,1 +1,11 @@
-{"message": {"type": "notice", "text": "No advice slips found matching that search term."}}
+{
+    "total_results": "1",
+    "query": "spider",
+    "slips": [
+        {
+            "id": 1,
+            "advice": "Remember that spiders are more afraid of you, than you are of them.",
+            "date": "2015-05-26"
+        }
+    ]
+}
