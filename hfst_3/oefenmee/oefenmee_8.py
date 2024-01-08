@@ -25,7 +25,9 @@ def bereken():
 
 
 knop = tk.Button(master=app, text="Klik ook op mij!",command=bereken)
-knop.grid(row=3,column=0,columnspan=2)
+knop.grid(row=3,column=0,columnspan=1)
+
+
 # 1) Inputveld aanmaken.
     # master: geef aan tot welke GUI het inputveld behoort.
 veld = tk.Entry(master=app)

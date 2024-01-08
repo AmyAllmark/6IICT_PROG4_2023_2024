@@ -48,7 +48,7 @@ def toon_resultaat():
 app = tk.Tk()
 
 # Labels van getallen maken & plaatsen.
-label = tk.Label(master=app, text="De twee getallen zijn:", height=2, width=50)
+label = tk.Label(master=app, text="De twee getallen zijn:", height=2, width=50, background="pink")
 label.grid(row=0, column=0, columnspan=2, pady=2)
 label_1 = tk.Label(master=app, font=("Helvetica",14), border=10, borderwidth=5, text=f"Getal 1: {getal_1}")
 label_1.grid(row=1, column=0, padx=10)
@@ -56,7 +56,7 @@ label_2 = tk.Label(master=app, font=("Helvetica",14), border=10, borderwidth=5, 
 label_2.grid(row=1, column=1, padx=10)
 
 # Knop gelinkt aan toon_resultaat() maken & plaatsen.
-knop = tk.Button(master=app, command=toon_resultaat, text="Bereken resultaat:", width=50)
+knop = tk.Button(master=app, command=toon_resultaat, text="Bereken resultaat:", width=50, border=10, borderwidth=5,background="green")
 knop.grid(row=2, column=0, columnspan=2, pady=10)
 
 # Label met resultaat maken & plaatsen.

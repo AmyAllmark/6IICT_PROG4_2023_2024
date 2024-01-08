@@ -20,7 +20,7 @@ def toevoegen():
     - Tenslotte moet de Entry veld leeggemaakt worden.
     """
     
-veld = tk.Entry(master=app, font=("Helvetica",14), border=10, borderwidth=5)
+veld = tk.Entry(master=app, font=("Helvetica",14), border=10, borderwidth=5,background="green")
 veld.grid(row=0, column=0)
 
 knop = tk.Button(master=app, command=toevoegen, text="Voeg toe aan de zin:", width=50)
