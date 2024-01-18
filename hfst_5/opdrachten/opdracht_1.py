@@ -1,5 +1,17 @@
 # Maak de klasse Familie aan zoals omschreven in opdracht 1.
 
+class Familie:
+    ras = "mens"# omdat dit altijd zo is en de zelfde waarde zal moeten hebben
+    def __init__(self, geslacht, leeftijd,naam) :
+        self.geslacht=geslacht
+        self.leeftijd=leeftijd
+        self.naam=naam
+
+    def is_leeftijd(self):
+    
+    def is_geslacht(self):
+
+        
 
 
 " Via onderstaande code kan je de klasse Familie testen. "
